@@ -199,6 +199,13 @@ dex_import {
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
+cc_prebuilt_binary {
+	name: "chargeonlymode",
+	owner: "xiaomi",
+	srcs: ["proprietary/bin/chargeonlymode"],
+	prefer: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.fm@1.0",
 	owner: "xiaomi",
