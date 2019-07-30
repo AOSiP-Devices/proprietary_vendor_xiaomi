@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sdm845-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/xiaomi/sdm845-common/proprietary/lib/libdisplayconfig.so:system/lib/libdisplayconfig.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/xiaomi/sdm845-common/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
