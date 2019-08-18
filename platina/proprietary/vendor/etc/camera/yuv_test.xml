@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<algo>
+  <library>libmorphohht4.0</library>
+  <algo_xml>morpho_lowlight4.0.xml</algo_xml>
+  <input>/data/vendor/camera/1.yuv</input>
+  <input>/data/vendor/camera/2.yuv</input>
+  <input>/data/vendor/camera/3.yuv</input>
+  <output>/data/vendor/camera/o.yuv</output>
+  <width>4000</width>
+  <height>3000</height>
+</algo>
