@@ -387,5 +387,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
-    com.qualcomm.location
+    HotwordEnrollmentXGoogleWCD9340
