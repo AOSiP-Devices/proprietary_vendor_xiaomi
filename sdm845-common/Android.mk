@@ -41,6 +41,17 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := ims
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := uceShimService
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
@@ -64,33 +75,9 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := WfdService
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/priv-app/WfdService/WfdService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := dpmserviceapp
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/priv-app/dpmserviceapp/dpmserviceapp.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ims
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/priv-app/ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -136,9 +123,49 @@ LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := WfdCommon
+LOCAL_MODULE := QtiTelephonyServicelibrary
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/framework/WfdCommon.jar
+LOCAL_SRC_FILES := proprietary/framework/QtiTelephonyServicelibrary.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.qti.imscmservice@1.0-java
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qcrilhook
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := vendor.qti.hardware.data.latency-V1.0-java
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := vendor.qti.ims.callinfo-V1.0-java
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
