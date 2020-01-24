@@ -3,6 +3,10 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 
+on boot
+    #Create PORT-BRIDGE daemon socket area
+    mkdir /dev/socket/port-bridge 0750 radio radio
+
 # msm specific files that need to be created on /data
 on post-fs-data
     #Create port-bridge log dir
@@ -13,15 +17,4 @@ service vendor.port-bridge /system/vendor/bin/port-bridge
     class main
     user radio
     group radio system inet
-    disabled
     oneshot
-
-# Manage port-bridge based on value of property
-on property:persist.vendor.data.mode=tethered
-    start vendor.port-bridge
-
-on property:persist.vendor.data.mode=concurrent
-    start vendor.port-bridge
-
-on property:persist.vendor.data.mode=embedded
-    stop vendor.port-bridge
