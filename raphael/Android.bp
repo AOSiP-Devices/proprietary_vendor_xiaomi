@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 The LineageOS Project
+ * Copyright (C) 2019-2020 AOSiP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,17 +33,6 @@ android_app_import {
 	name: "WfdService",
 	owner: "xiaomi",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.location",
-	owner: "xiaomi",
-	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
