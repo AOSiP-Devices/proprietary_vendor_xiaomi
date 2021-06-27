@@ -225,14 +225,14 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
-        <peak-value value="256" />
+        <peak-value value="240" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="96"/>
         <volmax-boost value="96"/>
         <volume-leveler-enable value="false"/>
         <volume-leveler-amount value="0"/>
-        <volume-leveler-in-target value="-320"/>
-        <volume-leveler-out-target value="-320"/>
+        <volume-leveler-in-target value="-256"/>
+        <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
         <bass-enhancer-enable value="true"/>
@@ -292,14 +292,14 @@
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
-        <peak-value value="256" />
+        <peak-value value="241" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="96"/>
         <volmax-boost value="96"/>
         <volume-leveler-enable value="false"/>
         <volume-leveler-amount value="1"/>
-        <volume-leveler-in-target value="-320"/>
-        <volume-leveler-out-target value="-320"/>
+        <volume-leveler-in-target value="-256"/>
+        <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="true"/>
         <bass-enhancer-enable value="true"/>
@@ -359,14 +359,14 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
-        <peak-value value="256" />
+        <peak-value value="241" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
         <volmax-boost value="95"/>
         <volume-leveler-enable value="false"/>
         <volume-leveler-amount value="0"/>
-        <volume-leveler-in-target value="-320"/>
-        <volume-leveler-out-target value="-320"/>
+        <volume-leveler-in-target value="-256"/>
+        <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
         <bass-enhancer-enable value="true"/>
@@ -426,14 +426,14 @@
         <dialog-enhancer-enable value="false"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
-        <peak-value value="256" />
+        <peak-value value="241" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="48"/>
         <volmax-boost value="96"/>
         <volume-leveler-enable value="false"/>
         <volume-leveler-amount value="0"/>
-        <volume-leveler-in-target value="-320"/>
-        <volume-leveler-out-target value="-320"/>
+        <volume-leveler-in-target value="-256"/>
+        <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="false"/>
         <bass-enhancer-enable value="false"/>
@@ -493,14 +493,14 @@
         <dialog-enhancer-enable value="true"/>
         <dialog-enhancer-amount value="6"/>
         <dialog-enhancer-ducking value="2"/>
-        <peak-value value="256" />
+        <peak-value value="241" />
         <surround-decoder-enable value="true"/>
         <surround-boost value="96"/>
         <volmax-boost value="96"/>
         <volume-leveler-enable value="false"/>
         <volume-leveler-amount value="0"/>
-        <volume-leveler-in-target value="-320"/>
-        <volume-leveler-out-target value="-320"/>
+        <volume-leveler-in-target value="-256"/>
+        <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
         <virtualizer-enable value="true"/>
         <bass-enhancer-enable value="true"/>
@@ -728,6 +728,7 @@
     <device_id id="headphone_usb" endpoint_port="usb"/>
     <device_id id="headphone_port" endpoint_port="headphone_port"/>
     <device_id id="usb" endpoint_port="usb"/>
+    <device_id id="default_bluetooth" endpoint_port="bluetooth"/>
     <device_id id="headphone_bluetooth" endpoint_port="bluetooth"/>
     <device_id id="bluetooth" endpoint_port="bluetooth"/>
     <data>
@@ -775,13 +776,13 @@
         <band_regulator frequency="13875" threshold_low="-192" threshold_high="0" isolated_band="false"/>
         <band_regulator frequency="19688" threshold_low="-192" threshold_high="0" isolated_band="false"/>
       </regulator-tuning>
-      <bass-enhancer-boost value="15"/>
-      <bass-enhancer-cutoff-frequency value="204"/>
-      <bass-enhancer-width value="8"/>
+      <bass-enhancer-boost value="96"/>
+      <bass-enhancer-cutoff-frequency value="160"/>
+      <bass-enhancer-width value="16"/>
       <bass-extraction-cutoff-frequency value="200"/>
       <complex-equalizer-tuning-left value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
       <complex-equalizer-tuning-right value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
-      <height-filter-mode value="1"/>
+      <height-filter-mode value="0"/>
       <output-mode>
         <orientation value="2"/>
         <output_channels value="2"/>
