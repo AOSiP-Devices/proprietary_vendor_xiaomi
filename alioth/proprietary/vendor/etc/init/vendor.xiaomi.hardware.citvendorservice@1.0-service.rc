@@ -1,4 +1,0 @@
-service cit_vendorhal_service /vendor/bin/hw/vendor.xiaomi.hardware.citvendorservice@1.0-service
-class hal
-user system
-group system
